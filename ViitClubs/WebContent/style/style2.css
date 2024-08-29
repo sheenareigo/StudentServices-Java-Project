@@ -1,0 +1,51 @@
+/* Additional CSS for the Home Page */
+
+
+
+
+
+.services-description {
+    text-align: center;
+    padding: 20px;
+}
+
+.services-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.services-icons div {
+    text-align: center;
+}
+
+/* Add styles for your icons here */
+
+/* Existing CSS */
+/* ... */
+
+.services-icons .service img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    filter: invert(100%);
+}
+
+.services-icons .service {
+    width: 20%; /* Adjust width as needed */
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+

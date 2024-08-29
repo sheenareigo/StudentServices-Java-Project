@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ViitClubs</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>StudentLoginController</servlet-name>
+    <servlet-class>studentlogin.jsp</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>StudentLoginController</servlet-name>
+    <url-pattern>/studentLogin</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>studenthomePage</servlet-name>
+    <jsp-file>/studenthomePage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>studenthomePage</servlet-name>
+    <url-pattern>/studenthomePage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>adminLogin</servlet-name>
+    <jsp-file>/adminLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminLogin</servlet-name>
+    <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>adminDashboard</servlet-name>
+    <jsp-file>/adminDashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminDashboard</servlet-name>
+    <url-pattern>/admindashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>  
+  
+    <servlet-name>ShowEnrollment</servlet-name>
+    <jsp-file>/enrollment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowEnrollment</servlet-name>
+    <url-pattern>/viewenrollment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ShowCoordinatorDashboard</servlet-name>
+    <jsp-file>/coordinatorDashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowCoordinatorDashboard</servlet-name>
+    <url-pattern>/coordinatordashboard</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>editClub</servlet-name>
+    <jsp-file>/editClub.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editClub</servlet-name>
+    <url-pattern>/editclubview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showfeedbacks</servlet-name>
+    <jsp-file>/customerFeedbacks.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showfeedbacks</servlet-name>
+    <url-pattern>/viewcustomerfeedbacks</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showwebsite</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showwebsite</servlet-name>
+    <url-pattern>/website</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showclub</servlet-name>
+    <jsp-file>/clubDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showclub</servlet-name>
+    <url-pattern>/viewshowclubdetails</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showreasons</servlet-name>
+    <jsp-file>/reasonsToJoinClub.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showreasons</servlet-name>
+    <url-pattern>/viewreasonstojoinclub</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showaboutus</servlet-name>
+    <jsp-file>/aboutus.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showaboutus</servlet-name>
+    <url-pattern>/viewaboutus</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>client</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+    <param-value>resources.application</param-value>
+  </context-param>
+  <listener>
+    <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+  </listener>
+</web-app>
